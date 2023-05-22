@@ -1,0 +1,32 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 50MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL55Dialect
+  datasource:
+    url: jdbc:mysql://${DB_URL:localhost}:${DB_PORT:3306}/${DB_NAME:magazine}?createDatabaseIfNotExist=true
+    username: ${DB_USER:root}
+    password: ${DB_PASS:bender001}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  flyway:
+    enabled: true
+  profiles:
+    active: dev
+app:
+  url: ${REACT_APP_API_URL:http://localhost:3000}
+  security:
+    secret: ${BCRYPT_SECRET:default}
+    access-cookie-name: accessToken
+    refresh-cookie-name: refreshToken
+    access-token-expiration-time-min: 15
+    refresh-token-expiration-time-day: 1
+    path: /
+    access-cookie-duration-sec: 900
+    refresh-cookie-duration-sec: 86400
+server:
+  servlet:
+    context-path: /api/v1

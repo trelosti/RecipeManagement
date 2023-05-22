@@ -1,0 +1,14 @@
+{
+  "recipeName": "applePie",
+  "steps": [
+    "someDescription"
+  ],
+  "ingredients": [
+    {
+      "ingredientName": "apple",
+      "measureUnit": "PCS",
+      "quantity": 1
+    }
+  ],
+  "cookTime": 20
+}

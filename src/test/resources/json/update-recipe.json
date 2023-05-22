@@ -1,0 +1,14 @@
+{
+  "recipeName": "Borsch",
+  "steps": [
+    "Put cabbage"
+  ],
+  "ingredients": [
+    {
+      "ingredientName": "cabbage",
+      "measureUnit": "PCS",
+      "quantity": 3
+    }
+  ],
+  "cookTime": 100
+}
