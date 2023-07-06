@@ -1,0 +1,30 @@
+@import "../../../app/assets/scss/variables";
+
+.text{
+  font-family: 'Red Rose', cursive;
+  display: block;
+
+  &.primary{
+    color: $primaryColor;
+  }
+
+  &.secondary{
+    color: $textSecondaryColor;
+  }
+
+  &.default{
+    color: $textColor;
+  }
+
+  &.light{
+    font-weight: 400;
+  }
+
+  &.regular{
+    font-weight: 500;
+  }
+
+  &.bold{
+    font-weight: 700;
+  }
+}

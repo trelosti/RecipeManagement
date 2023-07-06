@@ -1,0 +1,56 @@
+@import "../../../app/assets/scss/variables";
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  gap: 10px;
+  transition: 0.2s ease-out;
+
+  &.sm{
+    padding: 5px 30px;
+    font-size: 18px;
+  }
+
+  &.md{
+    padding: 7px 40px;
+    font-size: 23px;
+  }
+
+  &.lg{
+    padding: 10px 60px;
+    font-size: 30px;
+  }
+  
+  &.fill{
+    background-color: $primaryColor;
+    border: 2px solid $primaryColor;
+    color: $secondaryColor;
+
+    &:hover{
+      background-color: $secondaryColor;
+      border: 2px solid $primaryColor;
+      color: $primaryColor;
+    }
+  }
+
+  &.outline{
+    background-color: $secondaryColor;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+
+    &:hover{
+      background-color: $primaryColor;
+      color: $secondaryColor;
+    }
+  }
+
+  &.frameless{
+    color: $primaryColor;
+    &:hover{
+      letter-spacing: 1px;
+    }
+  }
+}

@@ -18,8 +18,19 @@ Deploy:     Docker 20.10.17
 
 2. Prepare `.env.local` file in project directory, with environment variables. Like in example:
 ```text
- DB_USER={{mysql user name}}
- DB_PASSWORD={{mysql password for user}}
+MYSQL_ROOT_PASSWORD={root_password}
+MYSQL_DATABASE={mysql_db}
+MYSQL_USER={mysql_user}
+MYSQL_PASSWORD={mysql_password}
+MYSQL_URL=...
+MYSQL_PORT=...
+DB_URL=...
+DB_PORT=...
+DB_NAME=...
+DB_USER=...
+DB_PASS=...
+REACT_APP_API_URL=...
+BCRYPT_SECRET=...
 ```
 
 3. Build the Docker image for your application by running the following command in project directory:
@@ -57,4 +68,17 @@ To run test it is needed to execute `mvn test`.
     <scope>test</scope>
 </dependency>
 ```
+
+# Front end
+
+
+## Build application
+
+> Written using React.js
+
+## Available Scripts
+#### `npm run build` - Build project
+#### `npm start` - Run project at watch mode
+#### `npm run test` - Run Unit-tests
+#### `npm run lint` - Run Style Guide test
 

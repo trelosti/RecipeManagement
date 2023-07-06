@@ -1,0 +1,22 @@
+.iconButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.sm{
+    width: 25px;
+  }
+
+  &.md{
+    width: 35px;
+  }
+
+  &.lg{
+    width: 45px;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}

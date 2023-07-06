@@ -1,0 +1,22 @@
+@import "../../../app/assets/scss/variables";
+
+.select{
+  background: $backgroundColor;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-family: 'Red Rose', cursive;
+  font-size: 18px;
+  outline: none;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 40px;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+

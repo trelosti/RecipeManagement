@@ -1,0 +1,12 @@
+@import "../../../app/assets/scss/variables";
+
+.input{
+  background: $backgroundColor;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-family: 'Red Rose', cursive;
+  font-size: 18px;
+  outline: none;
+}

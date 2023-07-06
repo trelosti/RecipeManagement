@@ -1,0 +1,22 @@
+@import "app/assets/scss/variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  cursor: pointer;
+  font-family: 'Red Rose', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Red Rose', cursive;
+  background: $backgroundColor;
+}
